@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import styles from '../../styles/Home.module.css'
 import Introduce from '../components/Introduce/Introduce'
 import Skills from '../components/Skills/Skills'
+import Projects from '../components/Projects/Projects'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Introduce />
       <Skills />
+      <Projects />
     </div>
   )
 }
