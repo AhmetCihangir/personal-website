@@ -25,7 +25,7 @@ const Skills = () => {
           start: "top top",
           end: "75% center",
           pin : true,
-          pinSpacing : 0,
+          pinSpacing : 1,
           anticipatePin : 1,
         }
       })

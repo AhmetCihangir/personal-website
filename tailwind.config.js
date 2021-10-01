@@ -17,7 +17,10 @@ module.exports = {
       },
       fontSize : {
         xxs : "0.650rem"
-      }
+      },
+      borderWidth : {
+        "1" : "1px"
+      },
     },
   },
   variants: {
