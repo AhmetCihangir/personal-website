@@ -83,7 +83,7 @@ const Introduce = () => {
           Backend Developer
         </p>
         <p className="jobs top-160">Python Developer</p>
-        <p className="jobs bottom-44 left-40">
+        <p className="jobs bottom-40 left-40">
           React Native (Mobile App) Developer
         </p>
         <p className="jobs top-12 right-40">Entrepreneur</p>

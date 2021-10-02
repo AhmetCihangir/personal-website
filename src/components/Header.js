@@ -49,14 +49,20 @@ const Header = () => {
 
 
     return (
-        <div className="flex justify-end space-x-14 mx-12 h-16 mt-2" >
-            {header.map((h,i) => (
-                <div key={i} className="grid items-center w-20 cursor-pointer text-lg p-1 transition duration-200 rounded-lg ease-in hover:bg-gray-50" onClick={() => router.push(h.link)}>
-                    <p className="text-center">{h.name}</p>
-                </div>
-            ))}
+      <div className="fixed h-16 w-full">
+        <div className="flex justify-end space-x-14 mt-2 pr-7 h-full w-full">
+          {header.map((h, i) => (
+            <div
+              key={i}
+              className="grid items-center w-20 cursor-pointer text-lg p-1 transition duration-200 rounded-lg ease-in hover:bg-gray-50"
+              onClick={() => router.push(h.link)}
+            >
+              <p className="text-center">{h.name}</p>
+            </div>
+          ))}
         </div>
-    )
+      </div>
+    );
 }
 
 export default Header

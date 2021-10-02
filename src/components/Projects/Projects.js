@@ -13,7 +13,7 @@ const Projects = () => {
 
 
     return (
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center min-h-screen">
         <div className="w-3/4 grid md:grid-cols-2 ">
           {projects.map((p, i) => (
             <Project {...p} key={i} />

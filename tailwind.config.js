@@ -21,6 +21,16 @@ module.exports = {
       borderWidth : {
         "1" : "1px"
       },
+      backgroundColor: theme => ({
+        "gmail" : "#DB4437",
+        "kakaotalk" : "#ffe812",
+        "linkedin" : "#0077b5",
+      }),
+      gradientColorStops: theme => ({
+        "instagram-blue" : "#4c68d7",
+        "instagram-purple" : "#8a3ab9",
+        "instagram-orange" : "#e95950"
+      }),
     },
   },
   variants: {
