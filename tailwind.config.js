@@ -25,16 +25,36 @@ module.exports = {
         "gmail" : "#DB4437",
         "kakaotalk" : "#ffe812",
         "linkedin" : "#0077b5",
+        gunMetal : "#30343F", 
+        ghostWhite : "#FAFAFF",
+        lavendarBlue : "#E4D9FF",
+        spaceCadet1 : "#273469",
+        spaceCadet2 : "#1E2749"
       }),
       gradientColorStops: theme => ({
         "instagram-blue" : "#4c68d7",
         "instagram-purple" : "#8a3ab9",
         "instagram-orange" : "#e95950"
       }),
+      padding : {
+        "1/2" : "0.125rem"
+      },
+      textColor : theme => ({
+        gunMetal : "#30343F", 
+        ghostWhite : "#FAFAFF",
+        lavendarBlue : "#E4D9FF",
+        spaceCadet1 : "#273469",
+        spaceCadet2 : "#1E2749"
+      }),
+      fontFamily : {
+        roboto : ["Roboto"]
+      }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide")
+  ],
 }

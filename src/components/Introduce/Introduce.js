@@ -54,7 +54,7 @@ const Introduce = () => {
     return (
       <div
         ref={ref}
-        className="flex relative justify-center h-full items-center"
+        className="flex relative justify-center h-screen items-center"
       >
         <div className="flex letters scale-50 sm:scale-100 justify-center items-start md:space-x-2 -space-x-4">
           {letters.map((l, i) => (
@@ -86,7 +86,7 @@ const Introduce = () => {
         <p className="jobs bottom-40 left-40">
           React Native (Mobile App) Developer
         </p>
-        <p className="jobs top-12 right-40">Entrepreneur</p>
+        <p className="jobs top-16 right-40">Entrepreneur</p>
         <p className="jobs bottom-12 right-40">Student</p>
       </div>
     );

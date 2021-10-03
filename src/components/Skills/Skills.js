@@ -2,6 +2,9 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import { useEffect, useRef } from "react"
 import Skill from "./Skill"
+import { VscLibrary } from "react-icons/vsc"
+import { BiCodeAlt } from "react-icons/bi"
+import { IoLanguage } from "react-icons/io5" 
 
 
 
@@ -10,14 +13,12 @@ const Skills = () => {
     gsap.registerPlugin(ScrollTrigger)
 
     const skills = [
-        { skillName : "Programming Languages" , skills : ["Javascript","Python","HTML","CSS","SQL","NOSQL","Firebase","SQLite"], topClass : "border-green-600 bg-green-400", bottomClass : "border-green-500 bg-green-300" },
-        { skillName : "Libraries" , skills : ["React.js","Next.js","Vue.js","React Native","Redux","Tailwind.css","Express.js","Socket.io"], topClass : "border-red-600 bg-red-400", bottomClass : "border-red-500 bg-red-300" },
-        { skillName : "Languages" , skills : ["Turkish (Native)","English (Advanced)","Korean (Intermediate)"], topClass : "border-blue-600 bg-blue-300", bottomClass : "border-yellow-500 bg-yellow-300" },
+        { skillName : "Programming Languages" , skills : ["Javascript","Python","HTML","CSS","SQL","NOSQL","Firebase","SQLite"], topClass : "border-green-600 bg-green-400", bottomClass : "border-green-500 bg-green-300",BallIcon : BiCodeAlt  },
+        { skillName : "Libraries" , skills : ["React.js","Next.js","Vue.js","React Native","Redux","Tailwind.css","Express.js","Socket.io"], topClass : "border-red-600 bg-red-400", bottomClass : "border-red-500 bg-red-300",BallIcon : VscLibrary },
+        { skillName : "Languages" , skills : ["Turkish (Native)","English (Advanced)","Korean (Intermediate)"], topClass : "border-blue-600 bg-blue-300", bottomClass : "border-yellow-500 bg-yellow-300",BallIcon : IoLanguage },
     ]
     
     useEffect(() => {
-      console.log(ref.current.querySelector(".grid>.skills>.bs"))
-
       const main = gsap.timeline({
         scrollTrigger : {
           trigger : ref.current,
@@ -31,21 +32,24 @@ const Skills = () => {
       })
 
 
-      .to(ref.current.querySelector(".grid>.skill0>.topClass"),{ backgroundColor : "rgb(16, 185, 129)",borderColor : "rgb(5, 150, 105)" })
-      .to(ref.current.querySelector(".grid>.skill0>.bottomClass"),{ backgroundColor : "rgb(110, 231, 183)",borderColor : "rgb(52, 211, 153)" }, "<")
-      .to(ref.current.querySelector(".grid>.skill0>.ball"),{ duration : 3, y : -200, ease : "bounce"})
-      .to(ref.current.querySelector(".grid>.skill0>.ball"),{ duration : 3, y : 0, ease : "bounce"})
+      .to(ref.current.querySelector(".grid>.skill0>.topClass"),{ backgroundColor : "#1E2749",borderColor : "#1E2749",color : "#E4D9FF" })
+      .to(ref.current.querySelector(".grid>.skill0>.bottomClass"),{ backgroundColor : "#E4D9FF",borderColor : "#1E2749" }, "<")
+
+      .to(ref.current.querySelector(".grid>.skill0>.ball"),{ duration : 3, y : -200, ease : "power2"}, "<")
+      .to(ref.current.querySelector(".grid>.skill0>.ball"),{ duration : 3, y : 0, ease : "power2"})
 
 
-      .to(ref.current.querySelector(".grid>.skill1>.topClass"),{ backgroundColor : "rgb(239, 68, 68)",borderColor : "rgb(220, 38, 38)" })
-      .to(ref.current.querySelector(".grid>.skill1>.bottomClass"),{ backgroundColor : "rgb(252, 165, 165)",borderColor : "rgb(248, 113, 113)" }, "<")
-      .to(ref.current.querySelector(".grid>.skill1>.ball"),{ duration : 3, y : -200, ease : "bounce"})
-      .to(ref.current.querySelector(".grid>.skill1>.ball"),{ duration : 3, y : 0, ease : "bounce"})
+      .to(ref.current.querySelector(".grid>.skill1>.topClass"),{ backgroundColor : "#1E2749",borderColor : "#1E2749",color : "#E4D9FF" })
+      .to(ref.current.querySelector(".grid>.skill1>.bottomClass"),{ backgroundColor : "#E4D9FF",borderColor : "#1E2749" }, "<")
 
-      .to(ref.current.querySelector(".grid>.skill2>.topClass"),{ backgroundColor : "rgb(245, 158, 11)",borderColor : "rgb(217, 119, 6)" },)
-      .to(ref.current.querySelector(".grid>.skill2>.bottomClass"),{ backgroundColor : "rgb(252, 211, 77)",borderColor : "rgb(251, 191, 36)" }, "<")
-      .to(ref.current.querySelector(".grid>.skill2>.ball"),{ duration : 3, y : -200, ease : "bounce"})
-      .to(ref.current.querySelector(".grid>.skill2>.ball"),{ duration : 3, y : 0, ease : "bounce"})
+      .to(ref.current.querySelector(".grid>.skill1>.ball"),{ duration : 3, y : -200, ease : "power2"},"<")
+      .to(ref.current.querySelector(".grid>.skill1>.ball"),{ duration : 3, y : 0, ease : "power2"})
+
+      .to(ref.current.querySelector(".grid>.skill2>.topClass"),{ backgroundColor : "#1E2749",borderColor : "#1E2749",color : "#E4D9FF" })
+      .to(ref.current.querySelector(".grid>.skill2>.bottomClass"),{ backgroundColor : "#E4D9FF",borderColor : "#1E2749" }, "<")
+
+      .to(ref.current.querySelector(".grid>.skill2>.ball"),{ duration : 3, y : -200, ease : "power2"},"<")
+      .to(ref.current.querySelector(".grid>.skill2>.ball"),{ duration : 3, y : 0, ease : "power2"})
     },[])
 
 
