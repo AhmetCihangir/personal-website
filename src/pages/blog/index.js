@@ -1,5 +1,5 @@
 import Header from "../../components/Header"
-import LatestNews from "../../components/LatestNews/LatestNews"
+import TopViews from "../../components/LatestNews/TopViews"
 import Search from "../../components/Search/Search"
 import Titles from "../../components/Search/Titles"
 
@@ -10,7 +10,7 @@ const blog = () => {
             <Header />
             {/* <Search />
             <Titles /> */}
-            <LatestNews />
+            <TopViews />
             
         </div>
     )
