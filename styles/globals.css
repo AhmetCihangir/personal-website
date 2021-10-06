@@ -9,3 +9,5 @@
     .green {@apply bg-green-500 border-green-600}
     .cion {@apply h-5 w-5 md:h-10 md:w-10 filter drop-shadow-xl p-0.5 sm:p-2 rounded-full }
 }
+
+@import "react-slideshow-image/dist/styles.css"
