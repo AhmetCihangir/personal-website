@@ -6,14 +6,24 @@ const Post = ({ width, height, post }) => {
         <img alt="" loading="lazy" className="rounded-md" src={post.src} />
 
         <div className="my-3 ml-2">
-          <h4>{post.name}</h4>
-          <p className="truncate">{post.description}</p>
+          <h4 className="text-xs md:text-base">{post.name}</h4>
+          <div className="flex space-x-1">
+            {post.tags.map((t, i) => (
+              <div key={i} className="text-gray-300">
+                #{t}
+              </div>
+            ))}
+          </div>
+          <p className="truncate text-xxs md:text-sm font-light">
+            {post.description}
+          </p>
         </div>
 
         <div className="flex justify-end">
-            <button className="bg-gunMetal text-ghostWhite rounded-md p-1 px-3 text-sm">Read More</button>
+          <button className="bg-gunMetal text-ghostWhite rounded-md text-xxs p-1 px-2 sm:px-3 sm:text-sm">
+            Read More
+          </button>
         </div>
-
       </div>
     );
 }

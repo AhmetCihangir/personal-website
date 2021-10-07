@@ -1,4 +1,5 @@
 import Header from "../../components/Header"
+import Latest3News from "../../components/LatestNews/Latest3News"
 import TopViews from "../../components/LatestNews/TopViews"
 import Search from "../../components/Search/Search"
 import Titles from "../../components/Search/Titles"
@@ -11,6 +12,8 @@ const blog = () => {
             {/* <Search />
             <Titles /> */}
             <TopViews />
+
+            <Latest3News />
             
         </div>
     )

@@ -13,7 +13,9 @@ module.exports = {
       inset : {
         "160" : "40rem",
         "120" : "30rem",
-        "5/12" : "41.66%"
+        "5/12" : "41.66%",
+        "btn" : "50% - 0.625rem",
+        "btnSm" : "50% - 1.25rem",
       },
       fontSize : {
         xxs : "0.650rem"

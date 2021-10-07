@@ -47,7 +47,7 @@ const Header = () => {
     ]
 
     return (
-      <div className="fixed top-0 h-16 w-full bg-ghostWhite z-10 pb-2 rounded-b-md">
+      <div className="fixed top-0 h-16 w-full bg-ghostWhite z-50 pb-2 rounded-b-md">
         {/* {innerWidth > 500 ? (
           <div className="flex justify-end space-x-14 mt-2 pr-7 h-full w-full">
           {header.map((h, i) => (
