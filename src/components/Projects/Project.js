@@ -22,7 +22,7 @@ const Project = ({ name , image, description, githubLink , websiteLink }) => {
             <h4 className="text-sm md:text-base font-light ml-2">{description}</h4>
             <div className="flex justify-end mt-2">
                 {githubLink && (
-                <button onClick={() => router.replace(githubLink)} className="bg-black text-white w-16 rounded-sm flex justify-center mr-2">
+                <button onClick={() => router.replace("https://www.github.com/AhmetCihangir" + githubLink)} className="bg-black text-white w-16 rounded-sm flex justify-center mr-2">
                     <AiFillGithub className="h-6 mr-1" /> Github{" "}
                 </button>
                 )}
