@@ -18,7 +18,8 @@ module.exports = {
         "btnSm" : "50% - 1.25rem",
       },
       fontSize : {
-        xxs : "0.650rem"
+        xxs : "0.650rem",
+        xxxs : "0.500rem"
       },
       borderWidth : {
         "1" : "1px"

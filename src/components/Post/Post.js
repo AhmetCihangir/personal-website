@@ -1,6 +1,10 @@
+import { useRouter } from "next/dist/client/router";
 import Image from "next/image"
 
+
 const Post = ({ width, height, post }) => {
+  const router = useRouter()  
+
     return (
       <div className={`${width} ${height} h-full w-full text-gunMetal`}>
         <img alt="" loading="lazy" className="rounded-md" src={post.src} />
@@ -20,7 +24,7 @@ const Post = ({ width, height, post }) => {
         </div>
 
         <div className="flex justify-end">
-          <button className="bg-gunMetal text-ghostWhite rounded-md text-xxs p-1 px-2 sm:px-3 sm:text-sm">
+          <button onClick={() => router.push("/blog/" + post.id)} className="bg-gunMetal text-ghostWhite rounded-md text-xxs p-1 px-2 sm:px-3 sm:text-sm">
             Read More
           </button>
         </div>
