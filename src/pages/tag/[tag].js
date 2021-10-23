@@ -7,9 +7,9 @@ const Search = () => {
     const router = useRouter()
     const { tag } = router?.query
 
-    const blogs = useSWR("/api/getTagBlog/"+tag,fetcher).data
+    // const blogs = useSWR("/api/getTagBlog/"+tag,fetcher).data
 
-    console.log(blogs)
+    // console.log(blogs)
 
 
 
