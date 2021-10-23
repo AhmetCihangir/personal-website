@@ -16,6 +16,7 @@ module.exports = {
         "5/12" : "41.66%",
         "btn" : "50% - 0.625rem",
         "btnSm" : "50% - 1.25rem",
+        "58" : "14.5rem"
       },
       fontSize : {
         xxs : "0.650rem",

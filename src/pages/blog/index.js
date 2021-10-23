@@ -8,9 +8,9 @@ const blog = () => {
     return (
         <div className="min-h-screen bg-ghostWhite">
             <div className="h-16" />
-            <Header />
-            {/* <Search />
-            <Titles /> */}
+            <Header  />
+            {/* <Search /> */}
+            {/* <Titles /> */}
             <TopViews />
 
             <Latest3News />

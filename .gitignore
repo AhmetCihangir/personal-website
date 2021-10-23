@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+.gitignore
+
+ciryuAdmin.json
+ciryuAdmin2.json
